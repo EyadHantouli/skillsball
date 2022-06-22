@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: "Spline Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: #000000;
+    color: white;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2015/09/29/15/12/stars-964022_960_720.png');
+    opacity: .5;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+.tagcloud {
+    display: inline-block;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    box-shadow: 0px 4px 2px #1742346b;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: fit-content !important;
+    width: 700px !important;
+    aspect-ratio: 1/1 !important;
+    /* background-color: black; */
+
+    position: absolute !important;
+    width: 740px;
+    height: 740px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 720px) {
+    .tagcloud {font-size: 10px !important;};
+}
+
+.tagcloud--item:hover {
+    color: #0dc087;
+}
